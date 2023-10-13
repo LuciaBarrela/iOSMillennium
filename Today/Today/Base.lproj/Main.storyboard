@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Reminder List View Controller-->
         <scene sceneID="YbW-JE-dKA">
             <objects>
-                <collectionViewController id="Wsu-Ie-SF8" sceneMemberID="viewController"/>
+                <collectionViewController id="Wsu-Ie-SF8" customClass="ReminderListViewController" customModule="Today" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3v-Ix-a8d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="119" y="34"/>
