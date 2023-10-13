@@ -14,6 +14,9 @@
 		AAD0599128EC8D12004F4962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD0599028EC8D12004F4962 /* Assets.xcassets */; };
 		AAD0599428EC8D12004F4962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD0599228EC8D12004F4962 /* LaunchScreen.storyboard */; };
 		AAD059C428ECC017004F4962 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD059C328ECC017004F4962 /* Reminder.swift */; };
+		B22A9AAD2AD98755009CEB12 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22A9AAC2AD98755009CEB12 /* Date+Today.swift */; };
+		B22A9AAF2AD988B0009CEB12 /* UIColor+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22A9AAE2AD988B0009CEB12 /* UIColor+Today.swift */; };
+		B22A9AB22AD989CD009CEB12 /* ReminderList-viewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22A9AB12AD989CD009CEB12 /* ReminderList-viewController+DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +27,10 @@
 		AAD0598E28EC8D10004F4962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAD0599028EC8D12004F4962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAD0599328EC8D12004F4962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AAD0599528EC8D12004F4962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAD059C028EC9768004F4962 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 		AAD059C328ECC017004F4962 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		B22A9AAC2AD98755009CEB12 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
+		B22A9AAE2AD988B0009CEB12 /* UIColor+Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Today.swift"; path = "../../../../../../Downloads/DisplayingCellInfo/StartingProject/Today/Models/UIColor+Today.swift"; sourceTree = "<group>"; };
+		B22A9AB12AD989CD009CEB12 /* ReminderList-viewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderList-viewController+DataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				AAD0598628EC8D10004F4962 /* Today */,
-				AAD059BF28EC9768004F4962 /* Configuration */,
 				AAD0598528EC8D10004F4962 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,29 +66,31 @@
 				AAD059C228ECBFAA004F4962 /* Models */,
 				AAD0598728EC8D10004F4962 /* AppDelegate.swift */,
 				AAD0598928EC8D10004F4962 /* SceneDelegate.swift */,
-				AAD0598B28EC8D10004F4962 /* ReminderListViewController.swift */,
 				AAD0598D28EC8D10004F4962 /* Main.storyboard */,
 				AAD0599028EC8D12004F4962 /* Assets.xcassets */,
 				AAD0599228EC8D12004F4962 /* LaunchScreen.storyboard */,
-				AAD0599528EC8D12004F4962 /* Info.plist */,
 			);
 			path = Today;
-			sourceTree = "<group>";
-		};
-		AAD059BF28EC9768004F4962 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				AAD059C028EC9768004F4962 /* SampleCode.xcconfig */,
-			);
-			path = Configuration;
 			sourceTree = "<group>";
 		};
 		AAD059C228ECBFAA004F4962 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				AAD059C328ECC017004F4962 /* Reminder.swift */,
+				B22A9AAE2AD988B0009CEB12 /* UIColor+Today.swift */,
+				B22A9AAC2AD98755009CEB12 /* Date+Today.swift */,
+				B22A9AB02AD98942009CEB12 /* ListViewController */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B22A9AB02AD98942009CEB12 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AAD0598B28EC8D10004F4962 /* ReminderListViewController.swift */,
+				B22A9AB12AD989CD009CEB12 /* ReminderList-viewController+DataSource.swift */,
+			);
+			path = ListViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +165,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD0598C28EC8D10004F4962 /* ReminderListViewController.swift in Sources */,
+				B22A9AAD2AD98755009CEB12 /* Date+Today.swift in Sources */,
 				AAD0598828EC8D10004F4962 /* AppDelegate.swift in Sources */,
 				AAD0598A28EC8D10004F4962 /* SceneDelegate.swift in Sources */,
 				AAD059C428ECC017004F4962 /* Reminder.swift in Sources */,
+				B22A9AB22AD989CD009CEB12 /* ReminderList-viewController+DataSource.swift in Sources */,
+				B22A9AAF2AD988B0009CEB12 /* UIColor+Today.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +198,6 @@
 /* Begin XCBuildConfiguration section */
 		AAD059AC28EC8D12004F4962 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAD059C028EC9768004F4962 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -252,7 +259,6 @@
 		};
 		AAD059AD28EC8D12004F4962 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAD059C028EC9768004F4962 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -308,7 +314,6 @@
 		};
 		AAD059AF28EC8D12004F4962 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAD059C028EC9768004F4962 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -336,7 +341,6 @@
 		};
 		AAD059B028EC8D12004F4962 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAD059C028EC9768004F4962 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
