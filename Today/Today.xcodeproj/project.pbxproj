@@ -13,7 +13,6 @@
 		AAD0598F28EC8D10004F4962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD0598D28EC8D10004F4962 /* Main.storyboard */; };
 		AAD0599128EC8D12004F4962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD0599028EC8D12004F4962 /* Assets.xcassets */; };
 		AAD0599428EC8D12004F4962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD0599228EC8D12004F4962 /* LaunchScreen.storyboard */; };
-		AAD059C128EC9770004F4962 /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AAD059C028EC9768004F4962 /* SampleCode.xcconfig */; };
 		AAD059C428ECC017004F4962 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD059C328ECC017004F4962 /* Reminder.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +25,6 @@
 		AAD0599028EC8D12004F4962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAD0599328EC8D12004F4962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAD0599528EC8D12004F4962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAD059B728EC8F0F004F4962 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		AAD059B828EC91FD004F4962 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LICENSE; sourceTree = "<group>"; };
 		AAD059C028EC9768004F4962 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 		AAD059C328ECC017004F4962 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,10 +43,8 @@
 		AAD0597B28EC8D10004F4962 = {
 			isa = PBXGroup;
 			children = (
-				AAD059B728EC8F0F004F4962 /* README.md */,
 				AAD0598628EC8D10004F4962 /* Today */,
 				AAD059BF28EC9768004F4962 /* Configuration */,
-				AAD059B828EC91FD004F4962 /* LICENSE */,
 				AAD0598528EC8D10004F4962 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,7 +116,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					AAD0598328EC8D10004F4962 = {
 						CreatedOnToolsVersion = 14.1;
@@ -154,7 +149,6 @@
 				AAD0599428EC8D12004F4962 /* LaunchScreen.storyboard in Resources */,
 				AAD0599128EC8D12004F4962 /* Assets.xcassets in Resources */,
 				AAD0598F28EC8D10004F4962 /* Main.storyboard in Resources */,
-				AAD059C128EC9770004F4962 /* SampleCode.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +225,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -292,6 +287,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
