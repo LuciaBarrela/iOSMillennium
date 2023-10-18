@@ -1,15 +1,18 @@
-/*
- See LICENSE folder for this sample’s licensing information.
- */
+//
+//  ReminderListViewController+DataSource.swift
+//  Today
+//
+//  Created by Lucia Barrela on 13/10/2023.
+//
 
 import UIKit
 
 extension ReminderListViewController {
-    typealias DataSource = UICollectionViewDiffableDataSource<Int, String>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, String>
+    typealias DataSource = UICollectionViewDiffableDataSource<Int, Reminder.ID>
+    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Reminder.ID>
 
-    func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, id: String) {
-        let reminder = Reminder.sampleData[indexPath.item]
+    func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, id: Reminder.ID) {
+        let reminder = reminder(withId: id)
         var contentConfiguration = cell.defaultContentConfiguration()
         contentConfiguration.text = reminder.title
         contentConfiguration.secondaryText = reminder.dueDate.dayAndTimeText
@@ -27,6 +30,16 @@ extension ReminderListViewController {
         backgroundConfiguration.backgroundColor = .todayListCellBackground
         cell.backgroundConfiguration = backgroundConfiguration
     }
+    
+    func reminder(withId id: Reminder.ID) -> Reminder {
+          let index = reminders.indexOfReminder(withId: id)
+          return reminders[index]
+      }
+    
+    func updateReminder(_ reminder: Reminder) {
+         let index = reminders.indexOfReminder(withId: reminder.id)
+         reminders[index] = reminder
+     }
 
     private func doneButtonConfiguration(for reminder: Reminder)
     -> UICellAccessory.CustomViewConfiguration

@@ -1,7 +1,9 @@
-/*
- See LICENSE folder for this sample’s licensing information.
- */
-
+//
+//  Date+Today.swift
+//  Today
+//
+//  Created by Lucia Barrela on 13/10/2023.
+//
 import Foundation
 
 extension Date {

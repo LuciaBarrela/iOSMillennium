@@ -1,6 +1,9 @@
-/*
- See LICENSE folder for this sample’s licensing information.
- */
+//
+//  UIColor+Today.swift
+//  Today
+//
+//  Created by Lucia Barrela on 13/10/2023.
+//
 
 import UIKit
 
