@@ -11,6 +11,14 @@ extension ReminderListViewController {
     typealias DataSource = UICollectionViewDiffableDataSource<Int, Reminder.ID>
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Reminder.ID>
     
+    //computed properties to add an accessibilityValue to the button
+    var reminderCompletedValue: String {
+            NSLocalizedString("Completed", comment: "Reminder completed value")
+        }
+        var reminderNotCompletedValue: String {
+            NSLocalizedString("Not completed", comment: "Reminder not completed value")
+        }
+    
     //new method updates the snapshot
     func updateSnapshot(reloading ids: [Reminder.ID] = []) {
         var snapshot = Snapshot()
@@ -37,6 +45,9 @@ extension ReminderListViewController {
         //calling the new button
         var doneButtonConfiguration = doneButtonConfiguration(for: reminder)
         doneButtonConfiguration.tintColor = .todayListCellDoneButtonTint
+        cell.accessibilityCustomActions = [doneButtonAccessibilityAction(for: reminder)]
+        cell.accessibilityValue =
+                    reminder.isComplete ? reminderCompletedValue : reminderNotCompletedValue
         cell.accessories = [
                    .customView(configuration: doneButtonConfiguration), .disclosureIndicator(displayed: .always)
                ]
@@ -64,6 +75,18 @@ extension ReminderListViewController {
         reminder.isComplete.toggle()
         updateReminder(reminder)
         updateSnapshot(reloading: [id])
+        }
+    
+    //func to accessibility with VoiceOver
+    private func doneButtonAccessibilityAction(for reminder: Reminder) -> UIAccessibilityCustomAction
+        {
+            let name = NSLocalizedString(
+                "Toggle completion", comment: "Reminder done button accessibility label")
+            let action = UIAccessibilityCustomAction(name: name) { [weak self] action in
+                self?.completeReminder(withId: reminder.id)
+                return true
+            }
+            return action
         }
     
     private func doneButtonConfiguration(for reminder: Reminder)
