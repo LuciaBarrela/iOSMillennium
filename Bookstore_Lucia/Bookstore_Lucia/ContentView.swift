@@ -18,7 +18,7 @@ struct ContentView: View {
                 }
             }
             .onAppear(perform: fetchData) // Fetch data when the view appears
-            .navigationBarTitle("Book Store")
+            .navigationBarTitle("Lucia's Bookstore")
         }
     }
 
