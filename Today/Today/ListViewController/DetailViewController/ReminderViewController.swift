@@ -13,17 +13,19 @@ class ReminderViewController: UICollectionViewController {
 
     //variables/properties
     var reminder: Reminder
+    var workingReminder: Reminder
     private var dataSource: DataSource!
 
-    
+    //initializing
     init(reminder: Reminder) {
         self.reminder = reminder
-        var listConfiguration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
-        listConfiguration.showsSeparators = false
-        listConfiguration.headerMode = .firstItemInSection //header mode
-        let listLayout = UICollectionViewCompositionalLayout.list(using: listConfiguration)
-        super.init(collectionViewLayout: listLayout)
-    }
+               self.workingReminder = reminder
+               var listConfiguration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+               listConfiguration.showsSeparators = false
+               listConfiguration.headerMode = .firstItemInSection
+               let listLayout = UICollectionViewCompositionalLayout.list(using: listConfiguration)
+               super.init(collectionViewLayout: listLayout)
+           }
     
     required init?(coder: NSCoder) {
         fatalError("Always initialize ReminderViewController using init(reminder:)")
@@ -53,13 +55,13 @@ class ReminderViewController: UICollectionViewController {
     
     //calls the superclass implementation
     override func setEditing(_ editing: Bool, animated: Bool) {
-            super.setEditing(editing, animated: animated)
-        if editing {
-                    updateSnapshotForEditing()
-                } else {
-                    updateSnapshotForViewing()
-                }
-        }
+           super.setEditing(editing, animated: animated)
+           if editing {
+               prepareForEditing()
+           } else {
+               prepareForViewing()
+           }
+       }
 
     
     //method that accepts a cell, an index path and a row
@@ -73,12 +75,27 @@ class ReminderViewController: UICollectionViewController {
             cell.contentConfiguration = defaultConfiguration(for: cell, at: row)
         case (.title, .editableText(let title)):
             cell.contentConfiguration = titleConfiguration(for: cell, with: title)
-                default:
+        case (.date, .editableDate(let date)):
+                  cell.contentConfiguration = dateConfiguration(for: cell, with: date)
+        case (.notes, .editableText(let notes)):
+                  cell.contentConfiguration = notesConfiguration(for: cell, with: notes)
+        default:
                     fatalError("Unexpected combination of section and row.")
                 }
        
         cell.tintColor = .todayPrimaryTint
 }
+    
+    //to hold the editing
+    private func prepareForEditing() {
+        
+        if workingReminder != reminder {
+                   reminder = workingReminder
+               }
+          
+           updateSnapshotForEditing()
+       }
+
 
     
    
@@ -88,10 +105,21 @@ class ReminderViewController: UICollectionViewController {
             snapshot.appendSections([.title, .date, .notes])
         snapshot.appendItems(
                    [.header(Section.title.name), .editableText(reminder.title)], toSection: .title)
+        snapshot.appendItems(
+                  [.header(Section.date.name), .editableDate(reminder.dueDate)], toSection: .date)
+              snapshot.appendItems(
+                  [.header(Section.notes.name), .editableText(reminder.notes)], toSection: .notes)
             snapshot.appendItems([.header(Section.date.name)], toSection: .date)
             snapshot.appendItems([.header(Section.notes.name)], toSection: .notes)
         dataSource.apply(snapshot)
         }
+    
+    private func prepareForViewing() {
+        if workingReminder != reminder {
+                   reminder = workingReminder
+               }
+           updateSnapshotForViewing()
+       }
     
     //function to update Snapshot
     private func updateSnapshotForViewing() {
