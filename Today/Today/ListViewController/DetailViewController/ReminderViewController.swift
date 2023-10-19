@@ -8,8 +8,8 @@
 import UIKit
 
 class ReminderViewController: UICollectionViewController {
-    private typealias DataSource = UICollectionViewDiffableDataSource<Int, Row>
-    private typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Row>
+    private typealias DataSource = UICollectionViewDiffableDataSource<Section, Row>
+    private typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Row>
 
     //variables/properties
     var reminder: Reminder
@@ -43,19 +43,39 @@ class ReminderViewController: UICollectionViewController {
                 }
         
         navigationItem.title = NSLocalizedString("Reminder", comment: "Reminder view controller title")
+        navigationItem.rightBarButtonItem = editButtonItem
 
         
-        updateSnapshot()
+        updateSnapshotForViewing()
         
             }
     
+    //calls the superclass implementation
+    override func setEditing(_ editing: Bool, animated: Bool) {
+            super.setEditing(editing, animated: animated)
+        if editing {
+                    updateSnapshotForEditing()
+                } else {
+                    updateSnapshotForViewing()
+                }
+        }
+
+    
     //method that accepts a cell, an index path and a row
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, row: Row) {
-        var contentConfiguration = cell.defaultContentConfiguration()
-                contentConfiguration.text = text(for: row)
-                contentConfiguration.textProperties.font = UIFont.preferredFont(forTextStyle: row.textStyle)
-                contentConfiguration.image = row.image
-        cell.contentConfiguration = contentConfiguration
+        let section = section(for: indexPath)
+        //switch statement using a tuple
+        switch (section, row) {
+        case (.view, _):
+            var contentConfiguration = cell.defaultContentConfiguration()
+                    contentConfiguration.text = text(for: row)
+                    contentConfiguration.textProperties.font = UIFont.preferredFont(forTextStyle: row.textStyle)
+                    contentConfiguration.image = row.image
+            cell.contentConfiguration = contentConfiguration
+                default:
+                    fatalError("Unexpected combination of section and row.")
+                }
+       
         cell.tintColor = .todayPrimaryTint
 }
 
@@ -70,11 +90,29 @@ class ReminderViewController: UICollectionViewController {
             }
         }
     
-    //function to update Snapshot
-    private func updateSnapshot() {
-        var snapshot = Snapshot()
-        snapshot.appendSections([0])
-        snapshot.appendItems([Row.title, Row.date, Row.time, Row.notes], toSection: 0)
+    //new update snapshot
+    private func updateSnapshotForEditing() {
+            var snapshot = Snapshot()
+            snapshot.appendSections([.title, .date, .notes])
         dataSource.apply(snapshot)
+        }
+    
+    //function to update Snapshot
+    private func updateSnapshotForViewing() {
+        var snapshot = Snapshot()
+        snapshot.appendSections([.view])
+        snapshot.appendItems([Row.title, Row.date, Row.time, Row.notes], toSection: .view)
+        dataSource.apply(snapshot)
+        }
+    
+    //accepts an index path and returns a Section
+    private func section(for indexPath: IndexPath) -> Section {
+        let sectionNumber = isEditing ? indexPath.section + 1 : indexPath.section
+        //instance of Section
+        guard let section = Section(rawValue: sectionNumber) else {
+            fatalError("Unable to find matching section")
+        }
+        
+        return section
         }
     }
