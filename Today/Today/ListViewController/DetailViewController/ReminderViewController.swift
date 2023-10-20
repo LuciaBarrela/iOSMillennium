@@ -10,22 +10,27 @@ import UIKit
 class ReminderViewController: UICollectionViewController {
     private typealias DataSource = UICollectionViewDiffableDataSource<Section, Row>
     private typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Row>
-
-    //variables/properties
-    var reminder: Reminder
-    var workingReminder: Reminder
-    private var dataSource: DataSource!
+    
+    var reminder: Reminder {
+           didSet {
+               onChange(reminder)
+           }
+       }
+       var workingReminder: Reminder
+       var onChange: (Reminder) -> Void
+       private var dataSource: DataSource!
 
     //initializing
-    init(reminder: Reminder) {
-        self.reminder = reminder
-               self.workingReminder = reminder
-               var listConfiguration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
-               listConfiguration.showsSeparators = false
-               listConfiguration.headerMode = .firstItemInSection
-               let listLayout = UICollectionViewCompositionalLayout.list(using: listConfiguration)
-               super.init(collectionViewLayout: listLayout)
-           }
+    init(reminder: Reminder, onChange: @escaping (Reminder) -> Void) {
+           self.reminder = reminder
+           self.workingReminder = reminder
+           self.onChange = onChange
+           var listConfiguration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+           listConfiguration.showsSeparators = false
+           listConfiguration.headerMode = .firstItemInSection
+           let listLayout = UICollectionViewCompositionalLayout.list(using: listConfiguration)
+           super.init(collectionViewLayout: listLayout)
+       }
     
     required init?(coder: NSCoder) {
         fatalError("Always initialize ReminderViewController using init(reminder:)")
@@ -86,13 +91,14 @@ class ReminderViewController: UICollectionViewController {
         cell.tintColor = .todayPrimaryTint
 }
     
+    @objc func didCancelEdit() {
+        workingReminder = reminder
+        setEditing(false, animated: true)}
+    
     //to hold the editing
     private func prepareForEditing() {
-        
-        if workingReminder != reminder {
-                   reminder = workingReminder
-               }
-          
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+                    barButtonSystemItem: .cancel, target: self, action: #selector(didCancelEdit))
            updateSnapshotForEditing()
        }
 
@@ -115,6 +121,7 @@ class ReminderViewController: UICollectionViewController {
         }
     
     private func prepareForViewing() {
+        navigationItem.leftBarButtonItem = nil
         if workingReminder != reminder {
                    reminder = workingReminder
                }

@@ -44,10 +44,14 @@ class ReminderListViewController: UICollectionViewController {
     
     //accepts a reminder identifier
     func pushDetailViewForReminder(withId id: Reminder.ID) {
-        let reminder = reminder(withId: id)
-        let viewController = ReminderViewController(reminder: reminder)
-        navigationController?.pushViewController(viewController, animated: true) //push to controller stack
-       }
+            let reminder = reminder(withId: id)
+            let viewController = ReminderViewController(reminder: reminder) { [weak self] reminder in
+                self?.updateReminder(reminder)
+                self?.updateSnapshot(reloading: [reminder.id])
+            }
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+
 
 
     private func listLayout() -> UICollectionViewCompositionalLayout {
