@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>http://books.google.com/books/content?id=PW0gsPB3mQcC&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api</key>
+			<dict/>
+			<key>https://books.google.com</key>
+			<dict>
+				<key>https://books.google.com</key>
+				<string></string>
+			</dict>
+			<key>https://www.googleapis.com/books/v1/volumes?q=ios&amp;maxResults=20&amp;startIndex=0&amp;fields=items(id,volumeInfo(title,authors,description,imageLinks/thumbnail))</key>
+			<dict/>
+		</dict>
+	</dict>
+</dict>
+</plist>

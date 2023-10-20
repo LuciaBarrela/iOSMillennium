@@ -9,21 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var books: [Book] = []
-
+    
     var body: some View {
         NavigationView {
-            List(books, id: \.id) { book in
-                NavigationLink(destination: BookDetailView(book: book)) {
-                    Text(book.volumeInfo.title)
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.flexible(), spacing: 20), GridItem(.flexible())], spacing: 20) {
+                    ForEach(books, id: \.id) { book in
+                        NavigationLink(destination: BookDetailView(book: book)) {
+                            BookRow(book: book)
+                        }
+                    }
                 }
+                .padding()
             }
-            .onAppear(perform: fetchData) // Fetch data when the view appears
+            .onAppear(perform: fetchData)
             .navigationBarTitle("Lucia's Bookstore")
         }
     }
-
+    
+    //fetching the API information
     func fetchData() {
-        let urlString = "https://www.googleapis.com/books/v1/volumes?q=ios&maxResults=20&startIndex=0"
+        let urlString = "https://www.googleapis.com/books/v1/volumes?q=ios&maxResults=20&startIndex=0&fields=items(id,volumeInfo(title,authors,description,imageLinks/thumbnail))"
 
         if let url = URL(string: urlString) {
             URLSession.shared.dataTask(with: url) { data, response, error in
@@ -37,11 +43,10 @@ struct ContentView: View {
             }.resume()
         }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
-

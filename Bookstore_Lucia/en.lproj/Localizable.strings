@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Bookstore_Lucia
+
+  Created by Lucia Barrela on 20/10/2023.
+  
+*/
+
+"welcome message" = "Welcome to the App!";
+"button_title" = "Tap me!";

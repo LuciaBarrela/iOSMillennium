@@ -17,6 +17,10 @@
 		B20111F22AE1AF760019F1E8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B20111F12AE1AF760019F1E8 /* Alamofire */; };
 		B20111F72AE1B1100019F1E8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20111F62AE1B1100019F1E8 /* Book.swift */; };
 		B20111F92AE1B1A30019F1E8 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20111F82AE1B1A30019F1E8 /* BookDetailView.swift */; };
+		B20E42C72AE2A78C0004F074 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E42C62AE2A78C0004F074 /* APIManager.swift */; };
+		B2B30CBD2AE2802D0069E74F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2B30CBF2AE2802D0069E74F /* Localizable.strings */; };
+		B2B30CC12AE286050069E74F /* BookRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B30CC02AE286050069E74F /* BookRow.swift */; };
+		B2B30CC32AE289870069E74F /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B30CC22AE289870069E74F /* URLImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,13 @@
 		B20111E32AE1AF370019F1E8 /* Bookstore_LuciaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookstore_LuciaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B20111F62AE1B1100019F1E8 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		B20111F82AE1B1A30019F1E8 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		B20E42C62AE2A78C0004F074 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		B20E42C82AE2AF710004F074 /* Bookstore-LuciaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bookstore-LuciaTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B20E42C92AE2AF980004F074 /* Bookstore-LuciaUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bookstore-LuciaUITests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B2B30CBE2AE2802D0069E74F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B2B30CC02AE286050069E74F /* BookRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
+		B2B30CC22AE289870069E74F /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
+		B2B30CC42AE28AF50069E74F /* Bookstore-Lucia-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bookstore-Lucia-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +91,7 @@
 		B20111BA2AE1AF360019F1E8 = {
 			isa = PBXGroup;
 			children = (
+				B2B30CBF2AE2802D0069E74F /* Localizable.strings */,
 				B20111F52AE1AF8F0019F1E8 /* APIManager */,
 				B20111F42AE1AF870019F1E8 /* Views */,
 				B20111F32AE1AF7F0019F1E8 /* Models */,
@@ -107,6 +119,7 @@
 				B20111F82AE1B1A30019F1E8 /* BookDetailView.swift */,
 				B20111C62AE1AF360019F1E8 /* Bookstore_LuciaApp.swift */,
 				B20111CA2AE1AF370019F1E8 /* Assets.xcassets */,
+				B2B30CC42AE28AF50069E74F /* Bookstore-Lucia-Info.plist */,
 				B20111CC2AE1AF370019F1E8 /* Preview Content */,
 			);
 			path = Bookstore_Lucia;
@@ -123,6 +136,7 @@
 		B20111D62AE1AF370019F1E8 /* Bookstore_LuciaTests */ = {
 			isa = PBXGroup;
 			children = (
+				B20E42C82AE2AF710004F074 /* Bookstore-LuciaTests-Info.plist */,
 				B20111D72AE1AF370019F1E8 /* Bookstore_LuciaTests.swift */,
 			);
 			path = Bookstore_LuciaTests;
@@ -131,6 +145,7 @@
 		B20111E02AE1AF370019F1E8 /* Bookstore_LuciaUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B20E42C92AE2AF980004F074 /* Bookstore-LuciaUITests-Info.plist */,
 				B20111E12AE1AF370019F1E8 /* Bookstore_LuciaUITests.swift */,
 				B20111E32AE1AF370019F1E8 /* Bookstore_LuciaUITestsLaunchTests.swift */,
 			);
@@ -141,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				B20111F62AE1B1100019F1E8 /* Book.swift */,
+				B2B30CC02AE286050069E74F /* BookRow.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +164,7 @@
 		B20111F42AE1AF870019F1E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B2B30CC22AE289870069E74F /* URLImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +172,7 @@
 		B20111F52AE1AF8F0019F1E8 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				B20E42C62AE2A78C0004F074 /* APIManager.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -270,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20111CE2AE1AF370019F1E8 /* Preview Assets.xcassets in Resources */,
+				B2B30CBD2AE2802D0069E74F /* Localizable.strings in Resources */,
 				B20111CB2AE1AF370019F1E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,9 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20111F92AE1B1A30019F1E8 /* BookDetailView.swift in Sources */,
+				B2B30CC12AE286050069E74F /* BookRow.swift in Sources */,
+				B2B30CC32AE289870069E74F /* URLImageView.swift in Sources */,
 				B20111C92AE1AF360019F1E8 /* ContentView.swift in Sources */,
 				B20111C72AE1AF360019F1E8 /* Bookstore_LuciaApp.swift in Sources */,
 				B20111F72AE1B1100019F1E8 /* Book.swift in Sources */,
+				B20E42C72AE2A78C0004F074 /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +355,17 @@
 			targetProxy = B20111DE2AE1AF370019F1E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2B30CBF2AE2802D0069E74F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2B30CBE2AE2802D0069E74F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B20111E52AE1AF370019F1E8 /* Debug */ = {
@@ -465,11 +498,15 @@
 				DEVELOPMENT_TEAM = LRM3AL75UJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bookstore-Lucia-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,11 +531,15 @@
 				DEVELOPMENT_TEAM = LRM3AL75UJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bookstore-Lucia-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,6 +562,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LRM3AL75UJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bookstore-LuciaTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "mbcp.Bookstore-LuciaTests";
@@ -541,6 +583,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LRM3AL75UJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bookstore-LuciaTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "mbcp.Bookstore-LuciaTests";
@@ -560,6 +603,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LRM3AL75UJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bookstore-LuciaUITests-Info.plist";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "mbcp.Bookstore-LuciaUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -578,6 +622,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LRM3AL75UJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bookstore-LuciaUITests-Info.plist";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "mbcp.Bookstore-LuciaUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
