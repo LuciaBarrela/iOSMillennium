@@ -28,6 +28,16 @@ class ReminderListViewController: UICollectionViewController {
             return collectionView.dequeueConfiguredReusableCell(
                 using: cellRegistration, for: indexPath, item: itemIdentifier)
         }
+        
+        //new add button
+        let addButton = UIBarButtonItem(
+                barButtonSystemItem: .add, target: self, action: #selector(didPressAddButton(_:)))
+        addButton.accessibilityLabel = NSLocalizedString(
+                    "Add reminder", comment: "Add button accessibility label")
+        navigationItem.rightBarButtonItem = addButton
+        if #available(iOS 17, *) {
+                   navigationItem.style = .navigator
+               }
 
         updateSnapshot() 
         
