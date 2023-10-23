@@ -83,6 +83,12 @@ class ReminderListViewController: UICollectionViewController {
         collectionView.dataSource = dataSource
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          refreshBackground()
+      }
+    
     override func collectionView(
             _ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath
         ) -> Bool {
@@ -103,6 +109,16 @@ class ReminderListViewController: UICollectionViewController {
                   }
            progressView.progress = progress
        }
+    
+    //fetches the new background gradient
+    func refreshBackground() {
+        collectionView.backgroundView = nil
+        let backgroundView = UIView()
+        let gradientLayer = CAGradientLayer.gradientLayer(for: listStyle, in: collectionView.frame)
+        backgroundView.layer.addSublayer(gradientLayer)
+        collectionView.backgroundView = backgroundView
+           }
+
     
     //accepts a reminder identifier
     func pushDetailViewForReminder(withId id: Reminder.ID) {
