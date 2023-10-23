@@ -12,6 +12,7 @@ App Scrumdinger: Aplicação de Swift e SwiftUI<p>
 
 App Today: Gestão de To Do List
 
+<img src="https://github.com/LuciaBarrela/iOsLucia/assets/134049391/d91e461c-76f8-4446-acea-61cb840fd801" width="200">
 <img src="https://github.com/LuciaBarrela/iOsLucia/assets/134049391/ad36de63-6eca-465b-bb8e-2c6dc493482f" width="200">
 <img src="https://github.com/LuciaBarrela/iOsLucia/assets/134049391/d1999269-2421-4956-b72c-66e42dfb6849" width="200">
 <img src="https://github.com/LuciaBarrela/iOsLucia/assets/134049391/27fe97a9-ea4b-48fa-962b-b8cb62af0ed3" width="200">
