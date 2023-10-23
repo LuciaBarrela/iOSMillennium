@@ -6,5 +6,5 @@
   
 */
 
-"welcome message" = "Welcome to the App!";
-"button_title" = "Tap me!";
+"book_title" = "Title";
+"book_author" = "Author";

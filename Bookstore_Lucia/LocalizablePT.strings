@@ -1,0 +1,11 @@
+/* 
+  LocalizablePT.strings
+  Bookstore_Lucia
+
+  Created by Lucia Barrela on 23/10/2023.
+  
+*/
+
+"book_title" = "Título";
+"book_author" = "Autor";
+// And so on...

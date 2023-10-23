@@ -18,7 +18,8 @@
 		B20111F72AE1B1100019F1E8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20111F62AE1B1100019F1E8 /* Book.swift */; };
 		B20111F92AE1B1A30019F1E8 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20111F82AE1B1A30019F1E8 /* BookDetailView.swift */; };
 		B20E42C72AE2A78C0004F074 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E42C62AE2A78C0004F074 /* APIManager.swift */; };
-		B2B30CBD2AE2802D0069E74F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2B30CBF2AE2802D0069E74F /* Localizable.strings */; };
+		B29D147B2AE6B8010048FDE6 /* LocalizablePT.strings in Resources */ = {isa = PBXBuildFile; fileRef = B29D147A2AE6B8010048FDE6 /* LocalizablePT.strings */; };
+		B2B30CBD2AE2802D0069E74F /* LocalizableENG.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2B30CBF2AE2802D0069E74F /* LocalizableENG.strings */; };
 		B2B30CC12AE286050069E74F /* BookRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B30CC02AE286050069E74F /* BookRow.swift */; };
 		B2B30CC32AE289870069E74F /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B30CC22AE289870069E74F /* URLImageView.swift */; };
 /* End PBXBuildFile section */
@@ -56,7 +57,8 @@
 		B20E42C62AE2A78C0004F074 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		B20E42C82AE2AF710004F074 /* Bookstore-LuciaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bookstore-LuciaTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B20E42C92AE2AF980004F074 /* Bookstore-LuciaUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bookstore-LuciaUITests-Info.plist"; sourceTree = SOURCE_ROOT; };
-		B2B30CBE2AE2802D0069E74F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B29D147A2AE6B8010048FDE6 /* LocalizablePT.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LocalizablePT.strings; sourceTree = "<group>"; };
+		B2B30CBE2AE2802D0069E74F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableENG.strings; sourceTree = "<group>"; };
 		B2B30CC02AE286050069E74F /* BookRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
 		B2B30CC22AE289870069E74F /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		B2B30CC42AE28AF50069E74F /* Bookstore-Lucia-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bookstore-Lucia-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -91,7 +93,8 @@
 		B20111BA2AE1AF360019F1E8 = {
 			isa = PBXGroup;
 			children = (
-				B2B30CBF2AE2802D0069E74F /* Localizable.strings */,
+				B2B30CBF2AE2802D0069E74F /* LocalizableENG.strings */,
+				B29D147A2AE6B8010048FDE6 /* LocalizablePT.strings */,
 				B20111F52AE1AF8F0019F1E8 /* APIManager */,
 				B20111F42AE1AF870019F1E8 /* Views */,
 				B20111F32AE1AF7F0019F1E8 /* Models */,
@@ -288,8 +291,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20111CE2AE1AF370019F1E8 /* Preview Assets.xcassets in Resources */,
-				B2B30CBD2AE2802D0069E74F /* Localizable.strings in Resources */,
+				B2B30CBD2AE2802D0069E74F /* LocalizableENG.strings in Resources */,
 				B20111CB2AE1AF370019F1E8 /* Assets.xcassets in Resources */,
+				B29D147B2AE6B8010048FDE6 /* LocalizablePT.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,12 +361,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B2B30CBF2AE2802D0069E74F /* Localizable.strings */ = {
+		B2B30CBF2AE2802D0069E74F /* LocalizableENG.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B2B30CBE2AE2802D0069E74F /* en */,
 			);
-			name = Localizable.strings;
+			name = LocalizableENG.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

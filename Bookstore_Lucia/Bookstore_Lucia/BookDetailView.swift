@@ -11,27 +11,35 @@ struct BookDetailView: View {
     let book: Book
 
     var body: some View {
-        VStack {
-            Text(book.volumeInfo.title)
-                .font(.title)
-                .fontWeight(.bold)
+        ScrollView {
+            URLImageView(url: book.volumeInfo.imageLinks?.thumbnail)
+                .frame(width: 150, height: 225) // Adjust dimensions as needed
+                .cornerRadius(10)
+                .padding()
 
-            if let authors = book.volumeInfo.authors {
-                Text("Author(s): " + authors.joined(separator: ", "))
-                    .foregroundColor(.gray)
+            VStack {
+                Text(book.volumeInfo.title)
+                    .font(.title)
+                    .fontWeight(.bold)
+
+                if let authors = book.volumeInfo.authors {
+                    Text("Author(s): " + authors.joined(separator: ", "))
+                        .foregroundColor(.gray)
+                }
+
+                if let description = book.volumeInfo.description {
+                    Text(description)
+                        .padding(.top, 10)
+                }
+
+                Spacer()
             }
-
-            if let description = book.volumeInfo.description {
-                Text(description)
-                    .padding(.top, 10)
-            }
-
-            Spacer()
+            .padding()
         }
-        .padding()
         .navigationBarTitle("Book Detail")
     }
 }
+
 
 struct BookDetailView_Previews: PreviewProvider {
     static var previews: some View {
