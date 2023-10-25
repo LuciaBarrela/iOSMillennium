@@ -8,6 +8,7 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import CoreData
 
 struct BookCellView: View {
     @ObservedObject var book: Book

@@ -10,6 +10,7 @@ import SwiftUI
 import SwiftyJSON
 import SDWebImageSwiftUI
 import WebKit
+import CoreData
 
 struct ContentView: View {
     @ObservedObject var booksData = getData()

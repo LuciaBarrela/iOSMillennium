@@ -10,6 +10,7 @@ import Foundation
 import SwiftyJSON
 import SDWebImage
 import SDWebImageSwiftUI
+import CoreData
 
 class Book : Identifiable, ObservableObject {
     var id : String

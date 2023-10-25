@@ -10,6 +10,7 @@ import SwiftUI
 import SDWebImage
 import SDWebImageSwiftUI
 import Foundation
+import CoreData
 
 
 struct BookDetailView: View {
