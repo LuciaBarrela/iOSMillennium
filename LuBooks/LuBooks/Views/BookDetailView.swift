@@ -11,7 +11,6 @@ import SDWebImageSwiftUI
 import Foundation
 import CoreData
 
-
 struct BookDetailView: View {
     var book: Book
     @ObservedObject var booksData: getData
@@ -23,17 +22,13 @@ struct BookDetailView: View {
         _isFavorite = State(initialValue: booksData.isFavorite(book: book))
     }
 
-    
-    
-    
     var body: some View {
-        ScrollView {
-            // Your book detail view code here
+        VStack {
             if let thumbnailURL = URL(string: book.imurl) {
                 WebImage(url: thumbnailURL)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity, maxHeight: 300)
+                    .frame(maxWidth: .infinity)
                     .cornerRadius(10)
             } else {
                 Text("No Image Available")
@@ -41,39 +36,45 @@ struct BookDetailView: View {
 
             Text(book.title)
                 .font(.title)
+                .padding(.top, 10)
 
             Text("Author: \(book.authors)")
                 .font(.subheadline)
 
             Text(book.desc)
                 .font(.body)
+                .padding(EdgeInsets(top: 10, leading: 20, bottom: 0, trailing: 20))
 
-            if let buyLink = URL(string: book.url) {
+            Spacer()
+
+            HStack {
                 Button(action: {
-                    UIApplication.shared.open(buyLink)
+                    booksData.toggleFavorite(book: book)
+                    isFavorite = book.isFavorite
                 }) {
-                    Text("Buy Now")
-                        .font(.headline)
-                        .foregroundColor(.blue)
+                    Image(systemName: isFavorite ? "heart.fill" : "heart")
+                        .font(.title)
+                        .foregroundColor(isFavorite ? .red : .gray)
+                }
+                .padding(.trailing, 20)
+
+                if let buyLink = URL(string: book.url) {
+                    Button(action: {
+                        UIApplication.shared.open(buyLink)
+                    }) {
+                        Text("Buy Now")
+                            .font(.headline)
+                            .foregroundColor(.blue)
+                            .padding()
+                            .background(RoundedRectangle(cornerRadius: 10).fill(Color.white))
+                    }
                 }
             }
-
-            Button(action: {
-                booksData.toggleFavorite(book: book)
-                isFavorite = book.isFavorite
-            }) {
-                Image(systemName: isFavorite ? "heart.fill" : "heart")
-                    .font(.title)
-                    .foregroundColor(isFavorite ? .red : .gray)
-            }
-            .padding()
-
         }
+        .padding()
         .navigationBarTitle(book.title)
         .onAppear {
             isFavorite = book.isFavorite
         }
     }
 }
-
-
