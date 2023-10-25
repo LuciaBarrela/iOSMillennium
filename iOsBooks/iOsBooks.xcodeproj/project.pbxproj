@@ -11,7 +11,6 @@
 		B2CF32BE2AE949B200A15A35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF32BD2AE949B200A15A35 /* ContentView.swift */; };
 		B2CF32C02AE949B200A15A35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CF32BF2AE949B200A15A35 /* Assets.xcassets */; };
 		B2CF32C32AE949B200A15A35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CF32C22AE949B200A15A35 /* Preview Assets.xcassets */; };
-		B2CF32C52AE949B200A15A35 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF32C42AE949B200A15A35 /* Persistence.swift */; };
 		B2CF32C82AE949B200A15A35 /* iOsBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2CF32C62AE949B200A15A35 /* iOsBooks.xcdatamodeld */; };
 		B2CF32D22AE949B300A15A35 /* iOsBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF32D12AE949B300A15A35 /* iOsBooksTests.swift */; };
 		B2CF32DC2AE949B300A15A35 /* iOsBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF32DB2AE949B300A15A35 /* iOsBooksUITests.swift */; };
@@ -47,7 +46,6 @@
 		B2CF32BD2AE949B200A15A35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2CF32BF2AE949B200A15A35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2CF32C22AE949B200A15A35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B2CF32C42AE949B200A15A35 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B2CF32C72AE949B200A15A35 /* iOsBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOsBooks.xcdatamodel; sourceTree = "<group>"; };
 		B2CF32CD2AE949B300A15A35 /* iOsBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOsBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CF32D12AE949B300A15A35 /* iOsBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOsBooksTests.swift; sourceTree = "<group>"; };
@@ -116,10 +114,9 @@
 				B2CF32F92AE94B1900A15A35 /* Views */,
 				B2CF32F42AE94AA300A15A35 /* Models */,
 				B2CF32EA2AE949DA00A15A35 /* Info.plist */,
-				B2CF32BB2AE949B200A15A35 /* iOsBooksApp.swift */,
 				B2CF32BD2AE949B200A15A35 /* ContentView.swift */,
+				B2CF32BB2AE949B200A15A35 /* iOsBooksApp.swift */,
 				B2CF32BF2AE949B200A15A35 /* Assets.xcassets */,
-				B2CF32C42AE949B200A15A35 /* Persistence.swift */,
 				B2CF32C62AE949B200A15A35 /* iOsBooks.xcdatamodeld */,
 				B2CF32C12AE949B200A15A35 /* Preview Content */,
 			);
@@ -313,7 +310,6 @@
 				B2CF32FD2AE94B5200A15A35 /* BookDetailView.swift in Sources */,
 				B2CF32F62AE94AC200A15A35 /* BookModel.swift in Sources */,
 				B2CF32FB2AE94B2B00A15A35 /* BookCellView.swift in Sources */,
-				B2CF32C52AE949B200A15A35 /* Persistence.swift in Sources */,
 				B2CF32BE2AE949B200A15A35 /* ContentView.swift in Sources */,
 				B2CF32C82AE949B200A15A35 /* iOsBooks.xcdatamodeld in Sources */,
 				B2CF32F82AE94AF000A15A35 /* JumpingBookIcon.swift in Sources */,
