@@ -32,7 +32,7 @@ struct ContentView: View {
 
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 10) {
-                        ForEach(Array(booksData.data.enumerated()), id: \.element.id) { (index, book) in
+                        ForEach(booksData.data, id: \.id) { book in
                             if !showFavoritesOnly || book.isFavorite {
                                 NavigationLink(destination: BookDetailView(book: book, booksData: booksData)) {
                                     BookCellView(book: book)
@@ -45,7 +45,6 @@ struct ContentView: View {
             .padding(.horizontal, 10)
         }
     }
-
 
     func loadMoreBooks() {
         isLoadingMore = true
