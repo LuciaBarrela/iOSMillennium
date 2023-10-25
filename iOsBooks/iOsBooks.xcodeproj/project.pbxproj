@@ -21,8 +21,6 @@
 		B2CF32FB2AE94B2B00A15A35 /* BookCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF32FA2AE94B2B00A15A35 /* BookCellView.swift */; };
 		B2CF32FD2AE94B5200A15A35 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF32FC2AE94B5200A15A35 /* BookDetailView.swift */; };
 		B2F9D68B2AE9630D00764A24 /* BookModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2F9D6892AE9630D00764A24 /* BookModel.xcdatamodeld */; };
-		B2F9D68E2AE9637E00764A24 /* BooksEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F9D68C2AE9637E00764A24 /* BooksEntity+CoreDataClass.swift */; };
-		B2F9D68F2AE9637E00764A24 /* BooksEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F9D68D2AE9637E00764A24 /* BooksEntity+CoreDataProperties.swift */; };
 		B2F9D6932AE9659900764A24 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F9D6922AE9659900764A24 /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +60,6 @@
 		B2CF32FA2AE94B2B00A15A35 /* BookCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellView.swift; sourceTree = "<group>"; };
 		B2CF32FC2AE94B5200A15A35 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		B2F9D68A2AE9630D00764A24 /* BookModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookModel.xcdatamodel; sourceTree = "<group>"; };
-		B2F9D68C2AE9637E00764A24 /* BooksEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BooksEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B2F9D68D2AE9637E00764A24 /* BooksEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BooksEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B2F9D6922AE9659900764A24 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,8 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				B2F9D6892AE9630D00764A24 /* BookModel.xcdatamodeld */,
-				B2F9D68C2AE9637E00764A24 /* BooksEntity+CoreDataClass.swift */,
-				B2F9D68D2AE9637E00764A24 /* BooksEntity+CoreDataProperties.swift */,
 				B2CF32BA2AE949B200A15A35 /* iOsBooks */,
 				B2CF32D02AE949B300A15A35 /* iOsBooksTests */,
 				B2CF32DA2AE949B300A15A35 /* iOsBooksUITests */,
@@ -317,14 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2CF32FD2AE94B5200A15A35 /* BookDetailView.swift in Sources */,
-				B2F9D68E2AE9637E00764A24 /* BooksEntity+CoreDataClass.swift in Sources */,
 				B2CF32F62AE94AC200A15A35 /* BookModel.swift in Sources */,
 				B2CF32FB2AE94B2B00A15A35 /* BookCellView.swift in Sources */,
 				B2CF32BE2AE949B200A15A35 /* ContentView.swift in Sources */,
 				B2F9D68B2AE9630D00764A24 /* BookModel.xcdatamodeld in Sources */,
 				B2CF32F82AE94AF000A15A35 /* JumpingBookIcon.swift in Sources */,
 				B2CF32BC2AE949B200A15A35 /* iOsBooksApp.swift in Sources */,
-				B2F9D68F2AE9637E00764A24 /* BooksEntity+CoreDataProperties.swift in Sources */,
 				B2F9D6932AE9659900764A24 /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
