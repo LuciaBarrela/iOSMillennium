@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2995A0A2AE976F400392922 /* LuBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A092AE976F400392922 /* LuBooksApp.swift */; };
+		B2995A0C2AE976F400392922 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A0B2AE976F400392922 /* ContentView.swift */; };
+		B2995A0E2AE976F500392922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2995A0D2AE976F500392922 /* Assets.xcassets */; };
+		B2995A112AE976F500392922 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2995A102AE976F500392922 /* Preview Assets.xcassets */; };
+		B2995A132AE976F500392922 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A122AE976F500392922 /* Persistence.swift */; };
+		B2995A162AE976F500392922 /* LuBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2995A142AE976F500392922 /* LuBooks.xcdatamodeld */; };
+		B2995A202AE976F500392922 /* LuBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A1F2AE976F500392922 /* LuBooksTests.swift */; };
+		B2995A2A2AE976F500392922 /* LuBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A292AE976F500392922 /* LuBooksUITests.swift */; };
+		B2995A2C2AE976F500392922 /* LuBooksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A2B2AE976F500392922 /* LuBooksUITestsLaunchTests.swift */; };
+		B2995A3A2AE977FC00392922 /* BookCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A392AE977FC00392922 /* BookCellView.swift */; };
+		B2995A3C2AE9781B00392922 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A3B2AE9781B00392922 /* BookDetailView.swift */; };
+		B2995A3F2AE9783900392922 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B2995A3E2AE9783900392922 /* SDWebImageSwiftUI */; };
+		B2995A422AE9784600392922 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B2995A412AE9784600392922 /* SwiftyJSON */; };
+		B2995A492AE978F000392922 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A482AE978F000392922 /* BookModel.swift */; };
+		B2995A4B2AE979E800392922 /* JumpingBookIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A4A2AE979E800392922 /* JumpingBookIcon.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2995A1C2AE976F500392922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29959FE2AE976F400392922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2995A052AE976F400392922;
+			remoteInfo = LuBooks;
+		};
+		B2995A262AE976F500392922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29959FE2AE976F400392922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2995A052AE976F400392922;
+			remoteInfo = LuBooks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B2995A062AE976F400392922 /* LuBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2995A092AE976F400392922 /* LuBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuBooksApp.swift; sourceTree = "<group>"; };
+		B2995A0B2AE976F400392922 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B2995A0D2AE976F500392922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2995A102AE976F500392922 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B2995A122AE976F500392922 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		B2995A152AE976F500392922 /* LuBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LuBooks.xcdatamodel; sourceTree = "<group>"; };
+		B2995A1B2AE976F500392922 /* LuBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2995A1F2AE976F500392922 /* LuBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuBooksTests.swift; sourceTree = "<group>"; };
+		B2995A252AE976F500392922 /* LuBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2995A292AE976F500392922 /* LuBooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuBooksUITests.swift; sourceTree = "<group>"; };
+		B2995A2B2AE976F500392922 /* LuBooksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuBooksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2995A392AE977FC00392922 /* BookCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellView.swift; sourceTree = "<group>"; };
+		B2995A3B2AE9781B00392922 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		B2995A442AE9787C00392922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B2995A452AE9789700392922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B2995A462AE978B600392922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B2995A482AE978F000392922 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		B2995A4A2AE979E800392922 /* JumpingBookIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingBookIcon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2995A032AE976F400392922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2995A422AE9784600392922 /* SwiftyJSON in Frameworks */,
+				B2995A3F2AE9783900392922 /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2995A182AE976F500392922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2995A222AE976F500392922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B29959FD2AE976F400392922 = {
+			isa = PBXGroup;
+			children = (
+				B2995A082AE976F400392922 /* LuBooks */,
+				B2995A1E2AE976F500392922 /* LuBooksTests */,
+				B2995A282AE976F500392922 /* LuBooksUITests */,
+				B2995A072AE976F400392922 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2995A072AE976F400392922 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2995A062AE976F400392922 /* LuBooks.app */,
+				B2995A1B2AE976F500392922 /* LuBooksTests.xctest */,
+				B2995A252AE976F500392922 /* LuBooksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2995A082AE976F400392922 /* LuBooks */ = {
+			isa = PBXGroup;
+			children = (
+				B2995A472AE978E000392922 /* Models */,
+				B2995A442AE9787C00392922 /* Info.plist */,
+				B2995A382AE977E700392922 /* Views */,
+				B2995A092AE976F400392922 /* LuBooksApp.swift */,
+				B2995A0B2AE976F400392922 /* ContentView.swift */,
+				B2995A0D2AE976F500392922 /* Assets.xcassets */,
+				B2995A122AE976F500392922 /* Persistence.swift */,
+				B2995A142AE976F500392922 /* LuBooks.xcdatamodeld */,
+				B2995A0F2AE976F500392922 /* Preview Content */,
+			);
+			path = LuBooks;
+			sourceTree = "<group>";
+		};
+		B2995A0F2AE976F500392922 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B2995A102AE976F500392922 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2995A1E2AE976F500392922 /* LuBooksTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2995A452AE9789700392922 /* Info.plist */,
+				B2995A1F2AE976F500392922 /* LuBooksTests.swift */,
+			);
+			path = LuBooksTests;
+			sourceTree = "<group>";
+		};
+		B2995A282AE976F500392922 /* LuBooksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B2995A462AE978B600392922 /* Info.plist */,
+				B2995A292AE976F500392922 /* LuBooksUITests.swift */,
+				B2995A2B2AE976F500392922 /* LuBooksUITestsLaunchTests.swift */,
+			);
+			path = LuBooksUITests;
+			sourceTree = "<group>";
+		};
+		B2995A382AE977E700392922 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2995A392AE977FC00392922 /* BookCellView.swift */,
+				B2995A3B2AE9781B00392922 /* BookDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2995A472AE978E000392922 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2995A482AE978F000392922 /* BookModel.swift */,
+				B2995A4A2AE979E800392922 /* JumpingBookIcon.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2995A052AE976F400392922 /* LuBooks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2995A2F2AE976F500392922 /* Build configuration list for PBXNativeTarget "LuBooks" */;
+			buildPhases = (
+				B2995A022AE976F400392922 /* Sources */,
+				B2995A032AE976F400392922 /* Frameworks */,
+				B2995A042AE976F400392922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuBooks;
+			packageProductDependencies = (
+				B2995A3E2AE9783900392922 /* SDWebImageSwiftUI */,
+				B2995A412AE9784600392922 /* SwiftyJSON */,
+			);
+			productName = LuBooks;
+			productReference = B2995A062AE976F400392922 /* LuBooks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2995A1A2AE976F500392922 /* LuBooksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2995A322AE976F500392922 /* Build configuration list for PBXNativeTarget "LuBooksTests" */;
+			buildPhases = (
+				B2995A172AE976F500392922 /* Sources */,
+				B2995A182AE976F500392922 /* Frameworks */,
+				B2995A192AE976F500392922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2995A1D2AE976F500392922 /* PBXTargetDependency */,
+			);
+			name = LuBooksTests;
+			productName = LuBooksTests;
+			productReference = B2995A1B2AE976F500392922 /* LuBooksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B2995A242AE976F500392922 /* LuBooksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2995A352AE976F500392922 /* Build configuration list for PBXNativeTarget "LuBooksUITests" */;
+			buildPhases = (
+				B2995A212AE976F500392922 /* Sources */,
+				B2995A222AE976F500392922 /* Frameworks */,
+				B2995A232AE976F500392922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2995A272AE976F500392922 /* PBXTargetDependency */,
+			);
+			name = LuBooksUITests;
+			productName = LuBooksUITests;
+			productReference = B2995A252AE976F500392922 /* LuBooksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B29959FE2AE976F400392922 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B2995A052AE976F400392922 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B2995A1A2AE976F500392922 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B2995A052AE976F400392922;
+					};
+					B2995A242AE976F500392922 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B2995A052AE976F400392922;
+					};
+				};
+			};
+			buildConfigurationList = B2995A012AE976F400392922 /* Build configuration list for PBXProject "LuBooks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B29959FD2AE976F400392922;
+			packageReferences = (
+				B2995A3D2AE9783900392922 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				B2995A402AE9784600392922 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				B2995A432AE9785500392922 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = B2995A072AE976F400392922 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2995A052AE976F400392922 /* LuBooks */,
+				B2995A1A2AE976F500392922 /* LuBooksTests */,
+				B2995A242AE976F500392922 /* LuBooksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2995A042AE976F400392922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2995A112AE976F500392922 /* Preview Assets.xcassets in Resources */,
+				B2995A0E2AE976F500392922 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2995A192AE976F500392922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2995A232AE976F500392922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2995A022AE976F400392922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2995A132AE976F500392922 /* Persistence.swift in Sources */,
+				B2995A0C2AE976F400392922 /* ContentView.swift in Sources */,
+				B2995A0A2AE976F400392922 /* LuBooksApp.swift in Sources */,
+				B2995A162AE976F500392922 /* LuBooks.xcdatamodeld in Sources */,
+				B2995A3C2AE9781B00392922 /* BookDetailView.swift in Sources */,
+				B2995A3A2AE977FC00392922 /* BookCellView.swift in Sources */,
+				B2995A4B2AE979E800392922 /* JumpingBookIcon.swift in Sources */,
+				B2995A492AE978F000392922 /* BookModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2995A172AE976F500392922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2995A202AE976F500392922 /* LuBooksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2995A212AE976F500392922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2995A2C2AE976F500392922 /* LuBooksUITestsLaunchTests.swift in Sources */,
+				B2995A2A2AE976F500392922 /* LuBooksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2995A1D2AE976F500392922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2995A052AE976F400392922 /* LuBooks */;
+			targetProxy = B2995A1C2AE976F500392922 /* PBXContainerItemProxy */;
+		};
+		B2995A272AE976F500392922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2995A052AE976F400392922 /* LuBooks */;
+			targetProxy = B2995A262AE976F500392922 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B2995A2D2AE976F500392922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2995A2E2AE976F500392922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2995A302AE976F500392922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LuBooks/Preview Content\"";
+				DEVELOPMENT_TEAM = LRM3AL75UJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LuBooks/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mbcp.LuBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2995A312AE976F500392922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LuBooks/Preview Content\"";
+				DEVELOPMENT_TEAM = LRM3AL75UJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LuBooks/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mbcp.LuBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B2995A332AE976F500392922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LRM3AL75UJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LuBooksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mbcp.LuBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuBooks.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LuBooks";
+			};
+			name = Debug;
+		};
+		B2995A342AE976F500392922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LRM3AL75UJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LuBooksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mbcp.LuBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuBooks.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LuBooks";
+			};
+			name = Release;
+		};
+		B2995A362AE976F500392922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LRM3AL75UJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LuBooksUITests/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mbcp.LuBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuBooks;
+			};
+			name = Debug;
+		};
+		B2995A372AE976F500392922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LRM3AL75UJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LuBooksUITests/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mbcp.LuBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuBooks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2995A012AE976F400392922 /* Build configuration list for PBXProject "LuBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2995A2D2AE976F500392922 /* Debug */,
+				B2995A2E2AE976F500392922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2995A2F2AE976F500392922 /* Build configuration list for PBXNativeTarget "LuBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2995A302AE976F500392922 /* Debug */,
+				B2995A312AE976F500392922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2995A322AE976F500392922 /* Build configuration list for PBXNativeTarget "LuBooksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2995A332AE976F500392922 /* Debug */,
+				B2995A342AE976F500392922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2995A352AE976F500392922 /* Build configuration list for PBXNativeTarget "LuBooksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2995A362AE976F500392922 /* Debug */,
+				B2995A372AE976F500392922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2995A3D2AE9783900392922 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.4;
+			};
+		};
+		B2995A402AE9784600392922 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		B2995A432AE9785500392922 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2995A3E2AE9783900392922 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2995A3D2AE9783900392922 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		B2995A412AE9784600392922 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2995A402AE9784600392922 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		B2995A142AE976F500392922 /* LuBooks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B2995A152AE976F500392922 /* LuBooks.xcdatamodel */,
+			);
+			currentVersion = B2995A152AE976F500392922 /* LuBooks.xcdatamodel */;
+			path = LuBooks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B29959FE2AE976F400392922 /* Project object */;
+}
