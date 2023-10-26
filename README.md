@@ -1,5 +1,5 @@
 # iOsLucia
-Apps iOs no estágio Millenium BCP<p>
+Apps iOs in on work job experience in Millenium BCP<p>
 
 App Scrumdinger: Aplicação de Swift e SwiftUI<p>
 <img src="https://github.com/LuciaBarrela/iOsLucia/assets/134049391/c5cef455-6506-4e4e-ae4c-d75599acbd48" width="200">
@@ -10,7 +10,7 @@ App Scrumdinger: Aplicação de Swift e SwiftUI<p>
 <img src="https://github.com/LuciaBarrela/iOsLucia/assets/134049391/9d085ccd-35c7-4e1d-8205-4cdbfdc6608d" width="200">
 
 
-App Today: Gestão de To Do List
+App Today: To Do List
 
 <img src="https://github.com/LuciaBarrela/iOsLucia/assets/134049391/d91e461c-76f8-4446-acea-61cb840fd801" width="200">
 <img src="https://github.com/LuciaBarrela/iOsLucia/assets/134049391/ad36de63-6eca-465b-bb8e-2c6dc493482f" width="200">
