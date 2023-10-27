@@ -113,8 +113,8 @@
 		B2995A082AE976F400392922 /* LuBooks */ = {
 			isa = PBXGroup;
 			children = (
-				B2995A472AE978E000392922 /* Models */,
 				B2995A442AE9787C00392922 /* Info.plist */,
+				B2995A472AE978E000392922 /* Models */,
 				B2995A382AE977E700392922 /* Views */,
 				B2995A092AE976F400392922 /* LuBooksApp.swift */,
 				B2995A0B2AE976F400392922 /* ContentView.swift */,

@@ -39,7 +39,8 @@ struct BookCellView: View {
                 .lineLimit(1)
                 .padding(.horizontal, 10)
         }
-        .padding(.top, 10) // Add space at the top
+        .frame(width: 150, height: 200) // Set a fixed size
+        .padding(.top, 10)
         .padding(10)
         .background(Color.white)
         .cornerRadius(10)
