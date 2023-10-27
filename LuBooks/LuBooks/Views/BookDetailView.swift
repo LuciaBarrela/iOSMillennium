@@ -41,6 +41,7 @@ struct BookDetailView: View {
 
             Text("Author(s): \(book.authors)")
                 .font(.subheadline)
+                .padding(EdgeInsets(top: 1, leading: 20, bottom: 0, trailing: 20))
 
             Button(action: {
                 booksData.toggleFavorite(book: book)
@@ -73,7 +74,7 @@ struct BookDetailView: View {
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding()
-                    .frame(maxWidth: .infinity)
+                    .frame(maxWidth: 200)
                     .background(
                         RoundedRectangle(cornerRadius: 10)
                             .fill(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing))
