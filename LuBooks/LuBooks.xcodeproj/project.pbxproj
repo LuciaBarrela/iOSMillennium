@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B25454962AEBF22800DBF001 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25454952AEBF22800DBF001 /* WelcomeView.swift */; };
+		B254549C2AEC0A9100DBF001 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B254549B2AEC0A9100DBF001 /* Pacifico-Regular.ttf */; };
 		B2995A0A2AE976F400392922 /* LuBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A092AE976F400392922 /* LuBooksApp.swift */; };
 		B2995A0C2AE976F400392922 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A0B2AE976F400392922 /* ContentView.swift */; };
 		B2995A0E2AE976F500392922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2995A0D2AE976F500392922 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		B25454952AEBF22800DBF001 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		B254549B2AEC0A9100DBF001 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pacifico-Regular.ttf"; path = "../../../../../../Downloads/Pacifico/Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		B2995A062AE976F400392922 /* LuBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2995A092AE976F400392922 /* LuBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuBooksApp.swift; sourceTree = "<group>"; };
 		B2995A0B2AE976F400392922 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B254549A2AEC0A0C00DBF001 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B254549B2AEC0A9100DBF001 /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B29959FD2AE976F400392922 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 				B2995A092AE976F400392922 /* LuBooksApp.swift */,
 				B2995A0B2AE976F400392922 /* ContentView.swift */,
 				B2995A0D2AE976F500392922 /* Assets.xcassets */,
+				B254549A2AEC0A0C00DBF001 /* Fonts */,
 				B2995A122AE976F500392922 /* Persistence.swift */,
 				B2995A142AE976F500392922 /* LuBooks.xcdatamodeld */,
 				B2995A0F2AE976F500392922 /* Preview Content */,
@@ -287,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B254549C2AEC0A9100DBF001 /* Pacifico-Regular.ttf in Resources */,
 				B2995A112AE976F500392922 /* Preview Assets.xcassets in Resources */,
 				B2995A0E2AE976F500392922 /* Assets.xcassets in Resources */,
 			);
