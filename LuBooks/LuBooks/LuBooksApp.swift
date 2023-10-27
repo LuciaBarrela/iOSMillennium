@@ -11,10 +11,16 @@ import SwiftUI
 struct LuBooksApp: App {
     let persistenceController = PersistenceController.shared
 
+    @State private var showContentView = false
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            if showContentView {
+                ContentView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            } else {
+                WelcomeView(showContentView: $showContentView)
+            }
         }
     }
 }

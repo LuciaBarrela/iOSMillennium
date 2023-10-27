@@ -25,11 +25,10 @@ struct WelcomeView: View {
                 .padding(.top, 20)
 
             // Start Reading button
+            // Start Reading button
             Button(action: {
-                // When the button is pressed, set showContentView to true with animation
-                withAnimation {
-                    showContentView = true
-                }
+                // When the button is pressed, toggle the showContentView state
+                showContentView.toggle()
             }) {
                 Text("Start Reading")
                     .font(.title)
