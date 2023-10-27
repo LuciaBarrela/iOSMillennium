@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B25454962AEBF22800DBF001 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25454952AEBF22800DBF001 /* WelcomeView.swift */; };
 		B2995A0A2AE976F400392922 /* LuBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A092AE976F400392922 /* LuBooksApp.swift */; };
 		B2995A0C2AE976F400392922 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A0B2AE976F400392922 /* ContentView.swift */; };
 		B2995A0E2AE976F500392922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2995A0D2AE976F500392922 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B25454952AEBF22800DBF001 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		B2995A062AE976F400392922 /* LuBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2995A092AE976F400392922 /* LuBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuBooksApp.swift; sourceTree = "<group>"; };
 		B2995A0B2AE976F400392922 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				B2995A392AE977FC00392922 /* BookCellView.swift */,
 				B2995A3B2AE9781B00392922 /* BookDetailView.swift */,
+				B25454952AEBF22800DBF001 /* WelcomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				B2995A0C2AE976F400392922 /* ContentView.swift in Sources */,
 				B2995A0A2AE976F400392922 /* LuBooksApp.swift in Sources */,
 				B2995A162AE976F500392922 /* LuBooks.xcdatamodeld in Sources */,
+				B25454962AEBF22800DBF001 /* WelcomeView.swift in Sources */,
 				B2995A3C2AE9781B00392922 /* BookDetailView.swift in Sources */,
 				B2995A3A2AE977FC00392922 /* BookCellView.swift in Sources */,
 				B2995A4B2AE979E800392922 /* JumpingBookIcon.swift in Sources */,
