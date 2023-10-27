@@ -24,63 +24,70 @@ struct BookDetailView: View {
     }
 
     var body: some View {
-            VStack {
-                if let thumbnailURL = URL(string: book.imurl) {
-                    WebImage(url: thumbnailURL)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(maxWidth: .infinity)
-                        .cornerRadius(10)
-                } else {
-                    Text("No Image Available")
-                }
-
-                Text(book.title)
-                    .font(.title)
-                    .padding(.top, 10)
-
-                Text("Author: \(book.authors)")
-                    .font(.subheadline)
-
-                Text(book.desc)
-                    .font(.body)
-                    .padding(EdgeInsets(top: 10, leading: 20, bottom: 0, trailing: 20))
-
-                Spacer()
-
-                HStack {
-                    Button(action: {
-                        booksData.toggleFavorite(book: book)
-                        isFavorite = book.isFavorite
-                    }) {
-                        Image(systemName: isFavorite ? "heart.fill" : "heart")
-                            .font(.title)
-                            .foregroundColor(isFavorite ? .red : .gray)
-                    }
-                    .padding(.trailing, 20)
-                    
-                    // Button Safari Buy
-                    
-                    Button(action: {
-                        if let buyLink = URL(string: book.url) {
-                            // Create a Safari view controller to display the web page
-                            let safariViewController = SFSafariViewController(url: buyLink)
-                            
-                            // Present the Safari view controller
-                            UIApplication.shared.windows.first?.rootViewController?.present(safariViewController, animated: true, completion: nil)
-                        }
-                    }) {
-                        Text("Buy Now")
-                            .font(.headline)
-                            .foregroundColor(.blue)
-                            .padding()
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color.white))
-                    }
-                }
+        VStack {
+            if let thumbnailURL = URL(string: book.imurl) {
+                WebImage(url: thumbnailURL)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: .infinity)
+                    .cornerRadius(10)
+            } else {
+                Text("No Image Available")
             }
-            .navigationBarTitle(book.title)
-            .onAppear {
+
+            Text(book.title)
+                .font(.title)
+                .padding(.top, 10)
+
+            Text("Author(s): \(book.authors)")
+                .font(.subheadline)
+
+            Button(action: {
+                booksData.toggleFavorite(book: book)
                 isFavorite = book.isFavorite
+            }) {
+                Image(systemName: isFavorite ? "heart.fill" : "heart")
+                    .font(.title)
+                    .foregroundColor(isFavorite ? .red : .gray)
+            }
+            .padding(.top, 10) // Add spacing between authors and heart icon
+
+            Text(book.desc)
+                .font(.body)
+                .padding(EdgeInsets(top: 10, leading: 20, bottom: 0, trailing: 20))
+
+            Spacer()
+
+            // Button Safari Buy
+
+            Button(action: {
+                if let buyLink = URL(string: book.url) {
+                    // Create a Safari view controller to display the web page
+                    let safariViewController = SFSafariViewController(url: buyLink)
+
+                    // Present the Safari view controller
+                    UIApplication.shared.windows.first?.rootViewController?.present(safariViewController, animated: true, completion: nil)
+                }
+            }) {
+                Text("Buy Now")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing))
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white, lineWidth: 2)
+                    )
+                    .cornerRadius(10)
             }
         }
+        .navigationBarTitle(book.title)
+        .onAppear {
+            isFavorite = book.isFavorite
+        }
     }
+}
