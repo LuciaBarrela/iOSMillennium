@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B235E5622AF53BE3008A8A2F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B235E5612AF53BE3008A8A2F /* Localizable.xcstrings */; };
 		B25454962AEBF22800DBF001 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25454952AEBF22800DBF001 /* WelcomeView.swift */; };
 		B254549C2AEC0A9100DBF001 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B254549B2AEC0A9100DBF001 /* Pacifico-Regular.ttf */; };
 		B2995A0A2AE976F400392922 /* LuBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2995A092AE976F400392922 /* LuBooksApp.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B235E5612AF53BE3008A8A2F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B25454952AEBF22800DBF001 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		B254549B2AEC0A9100DBF001 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pacifico-Regular.ttf"; path = "../../../../../../Downloads/Pacifico/Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		B2995A062AE976F400392922 /* LuBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 		B29959FD2AE976F400392922 = {
 			isa = PBXGroup;
 			children = (
+				B235E5612AF53BE3008A8A2F /* Localizable.xcstrings */,
 				B2995A082AE976F400392922 /* LuBooks */,
 				B2995A1E2AE976F500392922 /* LuBooksTests */,
 				B2995A282AE976F500392922 /* LuBooksUITests */,
@@ -275,6 +278,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-PT",
 			);
 			mainGroup = B29959FD2AE976F400392922;
 			packageReferences = (
@@ -300,6 +304,7 @@
 			files = (
 				B254549C2AEC0A9100DBF001 /* Pacifico-Regular.ttf in Resources */,
 				B2995A112AE976F500392922 /* Preview Assets.xcassets in Resources */,
+				B235E5622AF53BE3008A8A2F /* Localizable.xcstrings in Resources */,
 				B2995A0E2AE976F500392922 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

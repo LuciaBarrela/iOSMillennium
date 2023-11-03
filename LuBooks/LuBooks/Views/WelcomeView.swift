@@ -23,7 +23,7 @@ struct WelcomeView: View {
                     .foregroundColor(.white)
                 
             
-                Text("Your Reading Companion for iOS Development learning")
+                Text("Your Reading Companion for iOs Development learning")
                     .font(.subheadline)
                     .foregroundColor(.white)
                     .padding(.bottom, 40)

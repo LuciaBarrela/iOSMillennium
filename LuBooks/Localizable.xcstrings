@@ -1,0 +1,87 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Author(s): %@" : {
+      "localizations" : {
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autor(es: %@"
+          }
+        }
+      }
+    },
+    "Buy Now" : {
+      "localizations" : {
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comprar já"
+          }
+        }
+      }
+    },
+    "Key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chave"
+          }
+        }
+      }
+    },
+    "No Image Available" : {
+      "localizations" : {
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imagem Indisponível"
+          }
+        }
+      }
+    },
+    "Show Favorites Only" : {
+      "localizations" : {
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar Favoritos"
+          }
+        }
+      }
+    },
+    "Start Reading" : {
+      "localizations" : {
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comece a ler"
+          }
+        }
+      }
+    },
+    "Welcome to LuBooks!" : {
+      "localizations" : {
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bem-vindo(a) a LuBooks!"
+          }
+        }
+      }
+    },
+    "Your Reading Companion for iOs Development learning" : {
+      "localizations" : {
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O seu companheiro de leitura para aprendizagens no desenvolvimento de software de iOs"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
