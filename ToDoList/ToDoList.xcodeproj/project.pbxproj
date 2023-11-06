@@ -33,6 +33,7 @@
 		B226BDE42AF5338A005C613A /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226BDE32AF5338A005C613A /* RegisterViewViewModel.swift */; };
 		B226BDE82AF534D2005C613A /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226BDE72AF534D2005C613A /* ToDoListItem.swift */; };
 		B226BDEA2AF53508005C613A /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226BDE92AF53508005C613A /* ToDoListItemViewViewModel.swift */; };
+		B25CBBF22AF9055900A0AE89 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CBBF12AF9055900A0AE89 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		B226BDE32AF5338A005C613A /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		B226BDE72AF534D2005C613A /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItem.swift; sourceTree = "<group>"; };
 		B226BDE92AF53508005C613A /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
+		B25CBBF12AF9055900A0AE89 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				B226BDCF2AF53283005C613A /* LoginView.swift */,
 				B226BDD12AF5328D005C613A /* RegisterView.swift */,
 				B226BDD32AF532BA005C613A /* ToDoListItemView.swift */,
+				B25CBBF12AF9055900A0AE89 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B226BDD02AF53283005C613A /* LoginView.swift in Sources */,
+				B25CBBF22AF9055900A0AE89 /* HeaderView.swift in Sources */,
 				B226BD952AF51566005C613A /* MainView.swift in Sources */,
 				B226BDE42AF5338A005C613A /* RegisterViewViewModel.swift in Sources */,
 				B226BDDA2AF53334005C613A /* MainViewViewModel.swift in Sources */,
