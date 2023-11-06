@@ -31,15 +31,16 @@ class LoginViewViewModel: ObservableObject {
         errorMessage = ""
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
               !password.trimmingCharacters(in: .whitespaces).isEmpty else {
-            errorMessage = "Please fill in all fields"
+            errorMessage = "Please fill in all fields."
             return false
         }
         
         //valid email
         guard email.contains("@") && email.contains(".") else {
-            errorMessage = "Please enter a valid email"
+            errorMessage = "Please enter valid email"
             return false
         }
+        
         
         return true
         
