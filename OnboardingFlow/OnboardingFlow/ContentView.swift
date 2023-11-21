@@ -23,6 +23,7 @@ struct ContentView: View {
         .background(Gradient(colors: gradientColors))
         //lets you swipe the .page tag
         .tabViewStyle(.page)
+        .foregroundStyle(.white)
         
     }
 }

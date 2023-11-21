@@ -24,8 +24,17 @@ struct FeatureCard: View {
             
         }
         .padding()
-        .background(.tint, in: RoundedRectangle(cornerRadius: 12))
-        .foregroundStyle(.white)
+        
+        .background {
+            RoundedRectangle(cornerRadius: 12)
+                .foregroundStyle(.tint)
+                .opacity(0.25)
+                .brightness(-0.4)
+            
+            
+        }
+        
+        .foregroundStyle(.tint)
         
     }
 }
