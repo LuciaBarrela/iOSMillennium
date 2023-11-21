@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B2F051032B0CBE7400E656C5 /* FeaturesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F051022B0CBE7400E656C5 /* FeaturesPage.swift */; };
 		B2F051052B0CBEC700E656C5 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F051042B0CBEC700E656C5 /* FeatureCard.swift */; };
+		B2F051072B0CCA8200E656C5 /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F051062B0CCA8200E656C5 /* ThirdPage.swift */; };
 		B2FF11D42B0B738800D9C245 /* OnboardingFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF11D32B0B738800D9C245 /* OnboardingFlowApp.swift */; };
 		B2FF11D62B0B738800D9C245 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF11D52B0B738800D9C245 /* ContentView.swift */; };
 		B2FF11D82B0B738900D9C245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FF11D72B0B738900D9C245 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		B2F051022B0CBE7400E656C5 /* FeaturesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesPage.swift; sourceTree = "<group>"; };
 		B2F051042B0CBEC700E656C5 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
+		B2F051062B0CCA8200E656C5 /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
 		B2FF11D02B0B738800D9C245 /* OnboardingFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FF11D32B0B738800D9C245 /* OnboardingFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowApp.swift; sourceTree = "<group>"; };
 		B2FF11D52B0B738800D9C245 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				B2FF11D52B0B738800D9C245 /* ContentView.swift */,
 				B2FF11FD2B0B73AE00D9C245 /* WelcomePage.swift */,
 				B2F051022B0CBE7400E656C5 /* FeaturesPage.swift */,
+				B2F051062B0CCA8200E656C5 /* ThirdPage.swift */,
 				B2F051042B0CBEC700E656C5 /* FeatureCard.swift */,
 				B2FF11D72B0B738900D9C245 /* Assets.xcassets */,
 				B2FF11D92B0B738900D9C245 /* Preview Content */,
@@ -268,6 +271,7 @@
 			files = (
 				B2FF11FE2B0B73AE00D9C245 /* WelcomePage.swift in Sources */,
 				B2F051032B0CBE7400E656C5 /* FeaturesPage.swift in Sources */,
+				B2F051072B0CCA8200E656C5 /* ThirdPage.swift in Sources */,
 				B2FF11D62B0B738800D9C245 /* ContentView.swift in Sources */,
 				B2FF11D42B0B738800D9C245 /* OnboardingFlowApp.swift in Sources */,
 				B2F051052B0CBEC700E656C5 /* FeatureCard.swift in Sources */,

@@ -18,6 +18,7 @@ struct ContentView: View {
             
             WelcomePage()
             FeaturesPage()
+            ThirdPage() 
         }
         
         .background(Gradient(colors: gradientColors))
