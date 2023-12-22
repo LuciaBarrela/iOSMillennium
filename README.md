@@ -1,5 +1,5 @@
 # iOSMillennium
-Apps iOs in on work job experience in Millenium BCP<p>
+Apps iOS made on the job formation in Millenium BCP<p>
 
 App Scrumdinger: Aplicação de Swift e SwiftUI<p>
 <img src="https://github.com/LuciaBarrela/iOsLucia/assets/134049391/c5cef455-6506-4e4e-ae4c-d75599acbd48" width="200">
